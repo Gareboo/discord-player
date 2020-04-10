@@ -2,8 +2,7 @@ const ytdl = require('ytdl-core');
 const SYA = require('simple-youtube-api');
 const mergeOptions = require('merge-options');
 
-const { VoiceChannel, version } = require("discord.js");
-if(version.split('.')[0] !== '12') throw new Error("Only the master branch of discord.js library is supported for now. Install it using 'npm install discordjs/discord.js'.");
+const { VoiceChannel } = require("discord.js");
 const Queue = require('./Queue');
 const Util = require('./Util');
 const Song = require('./Song');
